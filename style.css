@@ -1,71 +1,99 @@
 /* General Styling */
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Modern, rounded font */
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.8;
-    background-color: #f4f4f4;
+    line-height: 1.6; /* Improved line height */
+    background: #f8f9fa; /* Lighter background */
 }
+
+/* Header */
 header {
-    background: #004080;
+    background: #28a745; /* Green header */
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0; /* Increased padding */
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
 }
+
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger font size */
+    font-weight: 700;
 }
+
+/* Sections */
 section {
-    margin: 20px;
-    padding: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #ffffff;
+    margin: 40px auto; /* Increased margin */
+    padding: 30px;
+    max-width: 900px; /* Wider content area */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Softer shadow */
+    background: #fff;
+    overflow: hidden; /* Prevents content overflow issues */
 }
+
 section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #28a745; /* Green headings */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
 }
+
 p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
 }
+
 ul li {
-    margin-bottom: 10px;
-}
-a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-a:hover {
-    text-decoration: underline;
-    color: #0056b3;
-}
-img {
-    max-width: 150px;
-    border-radius: 50%;
     margin-bottom: 15px;
 }
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 200px; /* Slightly larger image */
+    border-radius: 50%;
+    margin-bottom: 25px;
+    display: block; /* Prevents image from affecting vertical spacing */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
     text-align: center;
-    margin: 20px 0;
-    color: #666;
+    padding: 20px 0;
+    color: #777;
+    background: #f0f0f0;
+    margin-top: 40px;
 }
-/* Add a flex layout for modern spacing */
+
+/* Flexbox for content centering */
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.content img {
-    margin-bottom: 20px;
+
+/* Hover effect for sections */
+section:hover {
+    transform: translateY(-3px); /* Subtle lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
