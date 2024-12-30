@@ -8,22 +8,35 @@ body {
     background: #f8f9fa;
 }
 
-/* Header */
-header {
-    background: #004080; /* Blue header (restored) */
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Intro Section */
+.intro {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    overflow: hidden;
+    text-align: center; /* Center the image and name */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 700;
+.intro img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-/* Sections */
+.intro h2 {
+    font-size: 2.2rem; /* Slightly larger than other h2s */
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+.intro p {
+    text-align: left; /* Align the paragraph text to the left */
+}
+
+/* Sections (General) */
 section {
     margin: 40px auto;
     padding: 30px;
@@ -37,74 +50,36 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #004080; /* Blue headings to match header */
+    color: #004080;
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
 }
 
-p {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 15px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-img {
-    max-width: 200px;
-    border-radius: 50%;
-    margin-bottom: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    color: #777;
-    background: #f0f0f0;
-    margin-top: 40px;
-}
-
-.content {
+/* ... (rest of your CSS: p, ul, a, footer, .inline-links) */
+.inline-links {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.inline-links li {
+    margin-bottom: 0;
+}
+
+.inline-links a i {
+    font-size: 1.5em;
+    margin: 0 5px;
+    transition: transform 0.2s;
+}
+
+.inline-links a:hover i {
+    transform: scale(1.2);
 }
 
 section:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Style for inline links */
-.inline-links {
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: center; /* Center the links */
-    gap: 20px; /* Space between links */
-    padding: 0;
-    margin-bottom: 0;
-}
-
-.inline-links li {
-    margin-bottom: 0; /* Remove bottom margin for list items */
 }
