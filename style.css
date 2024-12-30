@@ -55,6 +55,24 @@ section h2 {
     padding-bottom: 10px;
 }
 
+section ul { /* Target the ul inside sections specifically */
+    list-style-type: disc; /* Use disc (filled circle) for bullets */
+    padding-left: 20px; /* Add some left padding for indentation */
+    margin-bottom: 20px;
+}
+
+section li { /* Target the li inside sections specifically */
+    margin-bottom: 10px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004080;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
 /* ... (rest of your CSS: p, ul, a, footer, .inline-links) */
 .inline-links {
     display: flex;
