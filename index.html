@@ -3,45 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-        }
-        img {
-            max-width: 200px;
-            border-radius: 50%;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Edward Phillips - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Edward Phillips</h1>
     </header>
     <section>
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Picture">
-        <p>Hello! I'm [Your Name], a [Your Profession or Hobby]. This website serves as a hub for my work and interests.</p>
+        <div class="content">
+            <img src="profile.jpg" alt="Profile Picture">
+            <p>I am a DPhil candidate at the University of Oxford, researching Clinical AI (`AI for Healthcare') in the Computational Health Informatics Lab. I have industry experience as a data scientist and systems engineer, working in generative AI, medical device development, and biomarker research. I hold a Master's Degree in Information and Computer Engineering from the University of Cambridge, achieving First Class with Distinction. This website serves as a hub for my work and interests.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Research Interests</h2>
+        <ul>
+            I am currently working on several projects developing AI systems to improve clinical decision making. This includes foundational models for electronic health record (EHR) data, large multimodal models for oncology, and probabilistic risk prediction. I am also leading a research project in uncertainty propagation in large language models as part of the Oxford Artificial Intelligence Society.
+        </ul>
     </section>
     <section>
         <h2>Links</h2>
@@ -51,5 +31,8 @@
             <li><a href="https://github.com/ed-phillips" target="_blank">GitHub</a></li>
         </ul>
     </section>
+    <footer>
+        <p>&copy; 2024 Edward Phillips. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
