@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
+
+# Explicitly specify Jekyll version
+gem 'jekyll', '~> 4.3.2'
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
-    gem 'jekyll'
     gem 'jekyll-archives'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
@@ -22,10 +25,11 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
 end
+
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
-    gem 'observer' # used by jekyll-scholar
-    gem 'ostruct' # used by jekyll-twitter-plugin
+    gem 'observer'
+    gem 'ostruct'
 end
