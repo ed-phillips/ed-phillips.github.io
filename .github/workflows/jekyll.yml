@@ -19,39 +19,39 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       # Add Python setup step
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-          
+          python-version: "3.x"
+
       # Install Jupyter
       - name: Install Jupyter
         run: |
           python -m pip install --upgrade pip
           pip install jupyter nbconvert
-      
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: "3.1"
           bundler-cache: false
-      
+
       - name: Install Dependencies
         run: |
           bundle config set --local frozen false
           bundle install
-          
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
