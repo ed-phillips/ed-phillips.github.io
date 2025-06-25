@@ -17,7 +17,9 @@ social: true # includes social icons at the bottom of the page
 
 I am a DPhil candidate at the University of Oxford, researching Clinical AI ('AI for Healthcare') in the Computational Health Informatics Lab. I have industry experience as a data scientist and systems engineer, working in generative AI, medical device development, and biomarker research. I hold a Master's Degree in Information and Computer Engineering from the University of Cambridge, achieving First Class with Distinction.
 
-My research interests include:
+My research is centered around the development of AI tools to improve clinical decision-making, with an emphasis on explainable and uncertainty-propagating methods.
+
+Other interests include:
 
 - Foundational models for electronic health record data
 - Large multimodal models for oncology
