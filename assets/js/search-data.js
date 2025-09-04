@@ -435,6 +435,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/ed-phillips-739085168/", "_blank");
         },
       },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=RWQIIc0AAAAJ", "_blank");
+        },
+      },{
         id: 'social-x',
         title: 'X',
         section: 'Socials',
