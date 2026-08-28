@@ -158,7 +158,13 @@
       {% capture entrytype %}{% endcapture %}
     {% endif %}
     {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
+      {% capture entrymonth %}{{ " " }}{{ entry.month }}{% endcapture %}
+    {% else %}
+      {% comment %}
+        Liquid captures persist across loop iterations, so this must be cleared
+        or one entry's month leaks onto every later entry that has none.
+      {% endcomment %}
+      {% capture entrymonth %}{% endcapture %}
     {% endif %}
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
