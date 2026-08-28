@@ -19,7 +19,7 @@ I am a DPhil candidate in Engineering Science at the University of Oxford, worki
 
 My research develops reliable intelligent systems for clinical decision-making. My past and current work includes:
 
-- **Uncertainty quantification in large language models.** Methods for detecting and mitigating hallucination, including [Semantic Self-Distillation]({{ '/publications/' | relative_url }}) (UAI 2026) and geometric approaches to LLM uncertainty (TMLR 2026).
+- **Uncertainty quantification in large language models.** Methods for detecting and mitigating hallucinations, including [Semantic Self-Distillation]({{ '/publications/' | relative_url }}) (UAI 2026) and geometric approaches to LLM uncertainty (TMLR 2026).
 - **Guideline-grounded treatment planning agents.** An agent-based framework for treatment planning in oncology, with an upcoming pilot evaluation in collaboration with NHS and industry partners (TrustedMDT).
 - **Early disease diagnosis from large-scale hospital records.** Foundation models for electronic health record data, developed as part of CODETECT, a multi-site NHS study identifying hospitalised patients with undiagnosed chronic conditions.
 
