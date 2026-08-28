@@ -7,3 +7,23 @@
 
 "Vision":
   color: "#009f36"
+
+"UAI":
+  url: https://www.auai.org/
+  color: "#7a1f3d"
+
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#00369f"
+
+"COLM":
+  url: https://colmweb.org/
+  color: "#1f6f5c"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+"TechRxiv":
+  url: https://www.techrxiv.org/
+  color: "#4a4a4a"
