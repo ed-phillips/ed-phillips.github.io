@@ -272,7 +272,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Phillips]
-  first_name: [Edward, E.]
+  first_name: [Edward]
 
   style: apa
   locale: en
