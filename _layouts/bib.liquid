@@ -208,10 +208,16 @@
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.html %}
+        {% comment %}
+          html_label lets an entry name its destination (OpenReview, PMLR, ...)
+          instead of the generic "HTML". Add it to filtered_bibtex_keywords so
+          it stays out of the copyable bibtex.
+        {% endcomment %}
+        {% assign html_label = entry.html_label | default: 'HTML' %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">{{ html_label }}</a>
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ html_label }}</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
